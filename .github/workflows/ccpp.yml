@@ -9,7 +9,6 @@ jobs:
     
     steps:
     - name: test
-      run: |
-          ls
-          make strict
-      shell: bash
+      run: make strict
+      shell: sh
+      working-directory: ./
