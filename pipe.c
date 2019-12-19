@@ -22,7 +22,6 @@ void do_pipe(char *cmds[MAXCMDS][MAXARGS], int nbcmd, int bg)
       int input;
       pid_t pid;
       input = STDIN_FILENO;
-      pgid = 0;
       for(i=0; i < nbcmd; i++)
       {
           assert(pipe(fd) != -1);
