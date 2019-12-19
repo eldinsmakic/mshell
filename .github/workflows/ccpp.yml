@@ -10,6 +10,6 @@ jobs:
     steps:
     - name: test
       run: |
-          cd ..
+          ls
           make strict
       shell: bash
