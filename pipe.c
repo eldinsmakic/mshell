@@ -41,7 +41,6 @@ void do_pipe(char *cmds[MAXCMDS][MAXARGS], int nbcmd, int bg)
               default:
                   close(fd[1]);
                   input = fd[0];
-                  pgid = pid;
           }
       }
       close(fd[0]);
