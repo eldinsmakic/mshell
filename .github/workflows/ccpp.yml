@@ -9,5 +9,7 @@ jobs:
     
     steps:
     - name: test
-      run: make strict
+      run: |
+          cd ..
+          make strict
       shell: bash
